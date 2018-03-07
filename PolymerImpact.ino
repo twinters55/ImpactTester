@@ -115,7 +115,7 @@ void setup(){
         if (newPosition != oldPosition and newPosition > oldPosition  ) { //if newposition is actually new
             sensValue = newPosition;  
             oldPosition = newPosition;
-            theta = sensValue*360/4096; //setting theta
+            theta = (sensValue*360/4096) - 120; //setting theta
             // calculates maximum angle (deg) pendulum reaches
             //new calculations follow
             Hf = r * sin(theta);
